@@ -10,7 +10,7 @@
     $producto->addChild('existencias',$_POST['existencias']);
     file_put_contents('productos.xml',$productos->asXML());
     header('location:index.php?exito=1');
-
+require 'validaciones.php';
 if (isset($_POST)) {
 extract($_POST);
 $errores=array();

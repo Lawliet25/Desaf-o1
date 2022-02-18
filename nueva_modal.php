@@ -22,7 +22,7 @@
 						<label class="control-label" for="nombre">Nombre:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="nombre" id="nombre" required>
+						<input type="text" class="form-control" name="nombre" id="nombre">
 					</div>
 				</div>
 				<div class="row form-group">
@@ -30,7 +30,7 @@
 						<label class="control-label" for="descripcion">Descripción:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" min="2" max="5" class="form-control" name="descripcion" id="descripcion" required>
+						<input type="text" min="2" max="5" class="form-control" name="descripcion" id="descripcion">
 					</div>
 				</div>
 				<div class="row form-group">
@@ -58,7 +58,7 @@
             <label class="control-label" for="precio">Precio:</label>
           </div>
           <div class="col-sm-10">
-            <input type="number" class="form-control" name="precio" id="precio" required>
+            <input type="number" class="form-control" name="precio" id="precio">
           </div>
         </div>
         <div class="row form-group">
@@ -66,7 +66,7 @@
             <label class="control-label" for="existencias">Existencias:</label>
           </div>
           <div class="col-sm-10">
-            <input type="number" min="0" class="form-control" name="existencias" id="existencias" required>
+            <input type="number" min="0" class="form-control" name="existencias" id="existencias">
           </div>
         </div>
       </div>
