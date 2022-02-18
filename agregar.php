@@ -31,4 +31,5 @@ if(!isset($existencias)||estaVacio($existencias)){
   array_push($errores, "Debes ingresar el número de existencias");
 }
 var_dump($errores);
+    }
 ?>
