@@ -10,8 +10,8 @@
     $producto->addChild('existencias',$_POST['existencias']);
     file_put_contents('productos.xml',$productos->asXML());
     header('location:index.php?exito=1');
-    
-    if (isset($_POST)) {
+
+if (isset($_POST)) {
 extract($_POST);
 $errores=array();
 if(!isset($codigo)||estaVacio($codigo)){
@@ -31,5 +31,5 @@ if(!isset($existencias)||estaVacio($existencias)){
   array_push($errores, "Debes ingresar el número de existencias");
 }
 var_dump($errores);
-    }
+}
 ?>
