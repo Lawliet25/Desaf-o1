@@ -10,7 +10,7 @@
   <div class="form">
     <form action="acceso.php" method="post" class="login-form">
       <h4>Inicie sesión como administrador</h4><br>
-      <img src="img/admin.png" width="150px" align="center" alt="">
+      <img src="img/adm.png" width="150px" align="center" alt=""><br><br>
       <input required name="user" type="text" placeholder="Usuario"/>
       <input required name="pass" type="password" placeholder="Contraseña"/>
       <button>login</button>
