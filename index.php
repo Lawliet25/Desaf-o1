@@ -14,7 +14,8 @@
     <h1 class="page-header text-center">Registro de productos</h1>
     <a href="login.php"  class="btn btn-danger">Cerrar sesión</a>
     <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+      <br>
+        <div class="col-sm-12 col-sm-offset-0">
             <a href="formulario.php" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Agregar producto</a>
 
             <table class="table table-bordered table-striped" style="margin-top:20px;">
