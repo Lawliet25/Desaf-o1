@@ -20,11 +20,11 @@
                 <thead>
                     <!--<th>Codigo</th>-->
                     <th>Nombre de producto</th>
-                    <th>Descripción</th>
+                    <!--<th>Descripción</th>-->
                     <th>Imagen de producto</th>
-                    <th>Categoría</th>
+                    <!--<th>Categoría</th>-->
                     <th>Precio</th>
-                    <th>Existencias</th>
+                    <!--<th>Existencias</th>-->
                     <th>Acciones</th>
                 </thead>
                 <tbody>
@@ -35,11 +35,11 @@
                         <tr>
                             <!--<td><?//=$row->codigo?></td>-->
                             <td><?=$row->nombre?></td>
-                            <td><?=$row->descripcion?></td>
+                            <!--<td><?=$row->descripcion?></td>-->
                             <td><img src="img/<?=$row->img?>" width="300"></td>
-                            <td><?=$row->categoria?></td>
+                            <!--<td><?=$row->categoria?></td>-->
                             <td><?=$row->precio?></td>
-                            <td><?=$row->existencias?></td>
+                            <!--<td><?=$row->existencias?></td>-->
                             <td>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detalles_<?=$row->codigo?>">
                                 Ver más

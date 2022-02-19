@@ -11,7 +11,10 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+        <label>Codigo:</label><?php echo " " . $row->codigo . ""?><br>
+        <label>Descripción:</label><?php echo " " . $row->descripcion?><br>
+        <label>Existencias:</label><?php echo " " . $row->existencias?><br>
+        <label>Categoría:</label><?php echo " " . $row->categoria?><br>        
       </div>
 
       
