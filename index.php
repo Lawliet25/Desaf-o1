@@ -4,21 +4,24 @@
     <meta charset="utf-8">
 
     <title>Registro de productos</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
 </head>
 <body>
 <div class="container">
-    <h1 class="page-header text-center">Registro de productos</h1>
-    <a href="login.php"  class="btn btn-danger">Cerrar sesión</a>
+    <h1 class="page-header text-center py-3">Registro de productos</h1>
     <div class="row">
       <br>
-        <div class="col-sm-12 col-sm-offset-0">
-            <a href="formulario.php" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Agregar producto</a>
+        <div class="">
+            <div class="container">
+                <a href="formulario.php" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Agregar producto</a>
+                <a href="login.php"  class="btn btn-danger" style="float:right">Cerrar sesión</a>
+            </div>
 
-            <table class="table table-bordered table-striped" style="margin-top:20px;">
+            <table class="table table-light table-striped table align-middle table-bordered" style="margin-top:20px;">
                 <thead>
                     <th>Codigo</th>
                     <th>Nombre de producto</th>

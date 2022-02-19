@@ -10,11 +10,12 @@
 
 </head>
 <body>
-    <div class="container">
-
-        <h1 class="page-header text-center py-3">Listado de productos</h1>
-        <a href="login.php"  class="btn btn-primary">Iniciar sesión</a>
-        <div class="row py-3">
+    <div class="container py-3">
+        <h1 class="page-header text-center">Listado de productos</h1>
+        <a href="login.php"  class="btn btn-success" style="float:right">Iniciar sesión como Administrador</a>
+    </div>
+    <div class="container py-3">
+        <div class="">
         <table class="table table-light table-striped table align-middle table-bordered" style="margin-top:20px;">
                 <thead>
                     <!--<th>Codigo</th>-->
