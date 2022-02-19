@@ -40,7 +40,7 @@
                             <td><?=$row->categoria?></td>
                             <td><?=$row->precio?></td>
                             <td><?=$row->existencias?></td>
-                            <td><a href="#">Ver más</a></td>
+                            <td><a href="#detalles" data-toggle="modal">Ver más</a></td>
                         </tr>
                    <?php
                         }
