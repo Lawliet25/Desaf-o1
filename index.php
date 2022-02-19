@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+
     <title>Registro de productos</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
@@ -11,6 +12,7 @@
 <body>
 <div class="container">
     <h1 class="page-header text-center">Registro de productos</h1>
+    <a href="login.php"  class="btn btn-danger">Cerrar sesión</a>
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
             <a href="formulario.php" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Agregar producto</a>
@@ -113,7 +115,15 @@
 <?php
     }
 ?>
-
+<?php
+    if(isset($_GET['bueninicio'])){
+?>
+<script>
+    alertify.success('¡Bienvenido, administrador!')
+</script>
+<?php
+    }
+?>
 
 </body>
 </html>
