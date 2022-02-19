@@ -58,7 +58,7 @@
             <label class="control-label" style="position:relative; top:7px;">Precio:</label>
           </div>
           <div class="col-sm-10">
-            <input type="number" class="form-control" name="precio" value="<?php echo $row->precio; ?>">
+            <input type="number" class="form-control" name="precio" value="<?=$row->precio?>">
           </div>
         </div>
         <div class="row form-group">

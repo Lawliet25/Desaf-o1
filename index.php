@@ -43,7 +43,7 @@
                             <td><?=$row->descripcion?></td>
                             <td><img src="img/<?=$row->img?>" width="300"></td>
                             <td><?=$row->categoria?></td>
-                            <td><?=$row->precio?></td>
+                            <td><?php echo "$"; ?><?=$row->precio?></td>
                             <td><?=$row->existencias?></td>
                             <td>
                                 <a data-bs-toggle="modal" data-bs-target="#edit_<?=$row->codigo?>" class="btn btn-success">Editar</a>

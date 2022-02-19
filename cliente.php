@@ -38,7 +38,7 @@
                             <!--<td><?=$row->descripcion?></td>-->
                             <td><img src="img/<?=$row->img?>" width="300"></td>
                             <!--<td><?=$row->categoria?></td>-->
-                            <td><?=$row->precio?></td>
+                            <td><?php echo "$"; ?><?=$row->precio?></td>
                             <!--<td><?=$row->existencias?></td>-->
                             <td>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detalles_<?=$row->codigo?>">
