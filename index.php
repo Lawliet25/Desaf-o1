@@ -13,7 +13,7 @@
     <h1 class="page-header text-center">Registro de productos</h1>
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-            <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Agregar producto</a>
+            <a href="formulario.php" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Agregar producto</a>
 
             <table class="table table-bordered table-striped" style="margin-top:20px;">
                 <thead>
