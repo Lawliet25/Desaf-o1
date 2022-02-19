@@ -3,7 +3,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
                 <center><h4 class="modal-title" id="myModalLabel">Editar</h4></center>
             </div>
             <div class="modal-body">
@@ -38,7 +38,8 @@
 						<label class="control-label" style="position:relative; top:7px;">Imagen:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="file" class="form-control" name="img">
+						<input type="file" class="form-control" name="img" value="img/<?=$row->img?>" >
+            <img src="img/<?=$row->img?>" width="300px" alt="">
 					</div>
 				</div>
         <div class="row form-group">
@@ -46,11 +47,10 @@
 						<label class="control-label" style="position:relative; top:7px;">Categoría:</label>
 					</div>
           <div class="col-sm-10">
-          <select value="<?php echo $row->categoria; ?>" class="form-control" name="categoria" style="position:relative; top:7px;">
-            <option></option>
-            <option >Textil</option>
-            <option >Promocional</option>
-          </select>
+            <select name = "categoria" class="form-control">
+                <option value="Textil" <?php if ($row->categoria == "Textil") echo "selected='selected'";?> >Textil</option>
+                <option value="Promocional" <?php if ($row->categoria == "Promocional") echo "selected='selected'";?> >Promocional</option>
+                </select>
         </div>
         </div>
         <div class="row form-group">
@@ -72,7 +72,7 @@
       </div>
 			</div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+                <button type="button" class="btn btn-default" data-bs-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
                 <button type="submit" name="editar" class="btn btn-success"><span class="glyphicon glyphicon-check"></span>Actualizar</a>
 			</form>
             </div>

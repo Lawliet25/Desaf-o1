@@ -144,4 +144,4 @@
         <precio>5.50</precio>
         <existencias>500</existencias>
     </producto>
-</productos>
+<producto><codigo>PROD00089</codigo><nombre>Cualquier cos</nombre><descripcion>JAJAAJ</descripcion><img>serafinara&#xF1;a.jpg</img><categoria>Promocional</categoria><precio>50</precio><existencias>10</existencias></producto></productos>

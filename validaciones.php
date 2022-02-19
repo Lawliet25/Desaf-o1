@@ -15,8 +15,15 @@ function esTexto($var){
 function esImagen($archivo){
   $patron = "/\.(jpe?g|png)$/i";
   $verificado = preg_match($patron, $archivo);
+  if ($_FILES["img"]["name"]!=null) {
+    // code...
+
   $esimagen = $verificado == true ? true : false;
+
   return $esimagen;
+} else {
+  return true;
+}
 }
 
 function esUnico($var){
@@ -32,17 +39,18 @@ function UploadImage()
 {
 $target_dir = "img/"; //directorio en el que se subira
 $target_file = $target_dir . basename($_FILES["img"]["name"]);//se añade el directorio y el nombre del archivo
- 
+
+if ($_FILES["img"]["name"]!=null) {
 
 if (move_uploaded_file($_FILES["img"]["tmp_name"], $target_file))
 {
         echo "El archivo ". basename( $_FILES["fileToUpload"]["name"]). " Se subio correctamente";
- 
+
     } else {
         echo "Error al cargar el archivo";
     }
- 
-}
 
+}
+}
 
  ?>

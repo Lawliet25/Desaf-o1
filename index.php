@@ -46,8 +46,8 @@
                             <td><?=$row->precio?></td>
                             <td><?=$row->existencias?></td>
                             <td>
-                                <a href="#edit_<?=$row->codigo?>" data-toggle="modal" class="btn btn-success">Editar</a>
-                                <a href="#delete_<?=$row->codigo?>" data-toggle="modal" class="btn btn-danger">Eliminar</a>
+                                <a data-bs-toggle="modal" data-bs-target="#edit_<?=$row->codigo?>" class="btn btn-success">Editar</a>
+                                <a data-bs-toggle="modal" data-bs-target="#delete_<?=$row->codigo?>" class="btn btn-danger">Eliminar</a>
                             </td>
                         </tr>
                     <?php
