@@ -39,7 +39,7 @@
                             <td><?=$row->codigo?></td>
                             <td><?=$row->nombre?></td>
                             <td><?=$row->descripcion?></td>
-                            <td><?=$row->img?></td>
+                            <td><img src="img/<?=$row->img?>" width="300"></td>
                             <td><?=$row->categoria?></td>
                             <td><?=$row->precio?></td>
                             <td><?=$row->existencias?></td>
