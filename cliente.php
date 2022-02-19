@@ -14,7 +14,7 @@
         <div class="row py-3">
         <table class="table table-light table-striped table align-middle table-bordered" style="margin-top:20px;">
                 <thead>
-                    <th>Codigo</th>
+                    <!--<th>Codigo</th>-->
                     <th>Nombre de producto</th>
                     <th>Descripción</th>
                     <th>Imagen de producto</th>
@@ -26,22 +26,25 @@
                 <tbody>
                     <?php
                         $productos=simplexml_load_file('productos.xml');
-                        $numerador=0;
-                        $denominador=0;
                         foreach($productos->producto as $row){
-                            //$denominador+=$row->uvs;
-                            //$numerador+=$row->uvs*$row->nota;
                     ?>
                         <tr>
-                            <td><?=$row->codigo?></td>
+                            <!--<td><?//=$row->codigo?></td>-->
                             <td><?=$row->nombre?></td>
                             <td><?=$row->descripcion?></td>
-                            <td><?=$row->img?></td>
+                            <td><img src="img/<?=$row->img?>" width="300"></td>
                             <td><?=$row->categoria?></td>
                             <td><?=$row->precio?></td>
                             <td><?=$row->existencias?></td>
-                            <td><a href="#detalles" data-toggle="modal">Ver más</a></td>
+                            <td>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detalles_<?=$row->codigo?>">
+                                Ver más
+                            </button>
+                            </td>
                         </tr>
+                    <?php 
+                        include('modaldetalles.php');   
+                    ?>
                    <?php
                         }
                     ?>
@@ -50,6 +53,5 @@
 
         </div>
     </div>
-
 </body>
 </html>
