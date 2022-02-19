@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container py-3">
-        <h1 class="page-header text-center">Listado de productos</h1>
+        <h1 class="page-header text-center">Listado de productos TextilExport</h1>
         <a href="login.php"  class="btn btn-success" style="float:right">Iniciar sesión como Administrador</a>
     </div>
     <div class="container py-3">

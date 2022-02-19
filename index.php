@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="container">
-    <h1 class="page-header text-center py-3">Registro de productos</h1>
+    <h1 class="page-header text-center py-3">Registro de productos TextilExport</h1>
     <div class="row">
       <br>
         <div class="">
