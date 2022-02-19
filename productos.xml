@@ -144,4 +144,4 @@
         <precio>5.50</precio>
         <existencias>500</existencias>
     </producto>
-<producto><codigo>PROD00082</codigo><nombre>Celular</nombre><descripcion>Negro</descripcion><img/><categoria>Textil</categoria><precio>98</precio><exixtencia/><existencias>5</existencias></producto><producto><codigo>PROD00085</codigo><nombre>PC gaming</nombre><descripcion>HP</descripcion><img/><categoria>Promocional</categoria><precio>500</precio><existencias>14</existencias></producto><producto><codigo>PROD00086</codigo><nombre>Camisa </nombre><descripcion>Color negro, algod&#xF3;n</descripcion><img/><categoria>Textil</categoria><precio>25</precio><existencias>20</existencias></producto></productos>
+</productos>

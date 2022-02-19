@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row py-3">
             <h1>Agregar nuevo producto</h1>
-            <form method="POST" action="procesarvalida.php">
+            <form method="POST" action="procesarvalida.php" enctype="multipart/form-data">
 				<div class="row">
 					<div class="col-sm-2">
 						<label class="form-label" for="codigo">Codigo:</label>
@@ -45,7 +45,7 @@
 						<label class="control-label" for="imagen" >Imagen: </label>
 					</div>
 					<div class="col-sm-10">
-						<input type="" min="0" max="10" step="0.1" class="form-control" name="img" id="img">
+						<input type="file" class="form-control" name="img" id="img">
 					</div>
 				</div>
             <div class="row form-group">

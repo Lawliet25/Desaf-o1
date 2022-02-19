@@ -8,7 +8,7 @@
             </div>
             <div class="modal-body">
 			<div class="container-fluid">
-			<form method="POST" action="editar.php">
+			<form method="POST" action="editar.php" enctype="multipart/form-data">
 				<div class="row form-group">
 					<div class="col-sm-2">
 						<label class="control-label" style="position:relative; top:7px;">Codigo:</label>
@@ -38,7 +38,7 @@
 						<label class="control-label" style="position:relative; top:7px;">Imagen:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="" class="form-control" name="img" value="<?php echo $row->img; ?>">
+						<input type="file" class="form-control" name="img">
 					</div>
 				</div>
         <div class="row form-group">

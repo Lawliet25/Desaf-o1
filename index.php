@@ -29,11 +29,7 @@
                 <tbody>
                     <?php
                         $productos=simplexml_load_file('productos.xml');
-                        $numerador=0;
-                        $denominador=0;
                         foreach($productos->producto as $row){
-                            //$denominador+=$row->uvs;
-                            //$numerador+=$row->uvs*$row->nota;
                     ?>
                         <tr>
                             <td><?=$row->codigo?></td>
@@ -61,7 +57,6 @@
         </div>
     </div>
 </div>
-<?php include('nueva_modal.php'); ?>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <?php
@@ -87,6 +82,33 @@
 ?>
 <script>
     alertify.error('¡Producto eliminado correctamente!');
+</script>
+<?php
+    }
+?>
+<?php
+    if(isset($_GET['errorcode'])){
+?>
+<script>
+    alertify.error('¡El código es inválido!');
+</script>
+<?php
+    }
+?>
+<?php
+    if(isset($_GET['errorimagen'])){
+?>
+<script>
+    alertify.error('¡El formato de imagen es inválido!');
+</script>
+<?php
+    }
+?>
+<?php
+    if(isset($_GET['errorcodigo'])){
+?>
+<script>
+    alertify.error('¡El código ya existe!');
 </script>
 <?php
     }
