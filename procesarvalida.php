@@ -1,5 +1,6 @@
 <?php
     include 'validaciones.php';
+    if(mayorCero($_POST['existencias'])){
     if(!esUnico($_POST['codigo'])){   
     if(esImagen($_FILES["img"]["name"])){
     if(esCodigo($_POST['codigo'])){
@@ -24,5 +25,8 @@
 }
 }else{
     header('location:index.php?errorcodigo=1');
+}
+}else{
+    header('location:index.php?errorexis=1');
 }
 ?>

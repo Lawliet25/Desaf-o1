@@ -46,8 +46,15 @@
                             <td><?php echo "$"; ?><?=$row->precio?></td>
                             <td><?=$row->existencias?></td>
                             <td>
-                                <a data-bs-toggle="modal" data-bs-target="#edit_<?=$row->codigo?>" class="btn btn-success">Editar</a>
-                                <a data-bs-toggle="modal" data-bs-target="#delete_<?=$row->codigo?>" class="btn btn-danger">Eliminar</a>
+                                <div class="container">
+                                    <div class="row py-2">
+                                        <a data-bs-toggle="modal" data-bs-target="#edit_<?=$row->codigo?>" class="btn btn-success">Editar</a>
+                                    </div>
+                                    <div class="row py-2">    
+                                        <a data-bs-toggle="modal" data-bs-target="#delete_<?=$row->codigo?>" class="btn btn-danger">Eliminar</a>
+                                    </div>
+                                    
+                                </div>
                             </td>
                         </tr>
                     <?php
@@ -128,6 +135,16 @@
 <?php
     }
 ?>
+<?php
+    if(isset($_GET['errorexis'])){
+?>
+<script>
+    alertify.error('¡El número debe ser entero positivo!');
+</script>
+<?php
+    }
+?>
+
 
 </body>
 </html>

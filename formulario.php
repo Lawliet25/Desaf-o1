@@ -12,75 +12,70 @@
     <title>Agregar producto</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row py-3">
-            <h1>Agregar nuevo producto</h1>
-            <form method="POST" action="procesarvalida.php" enctype="multipart/form-data">
+<div class="container">
+	<h1 class="py-3 text-center">Agregar nuevo producto</h1>
+	<div class="row py-3">
+		<div class="col-md-8 offset-md-2">
+			<form method="POST" action="procesarvalida.php" enctype="multipart/form-data">
+  				<div class="row py-3">
+					  <div class="col-md-6">
+						  <div class="formgroup">
+    						<label for="codigo" class="form-label">Codigo</label>
+    						<input type="text" class="form-control" name="codigo" id="codigo" required>
+						  </div>
+					  </div>
+					  <div class="col-md-6">
+						  <div class="formgroup">
+    						<label for="nombre" class="form-label">Nombre</label>
+    						<input type="text" class="form-control" name="nombre" id="nombre" required>
+						  </div>
+					  </div>
+  				</div>
 				<div class="row">
-					<div class="col-sm-2">
-						<label class="form-label" for="codigo">Codigo:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" name="codigo" id="codigo">
-					</div>
+					  <div class="col-md-12">
+						  <div class="formgroup">
+    						<label for="descripcion" class="form-label">Descripción</label>
+    						<textarea name="descripcion" name="descripcion" id="descripcion" cols="20" rows="10" class="form-control" required></textarea>
+						  </div>
+					  </div>
+					  <div class="col-md-6">
+						  <div class="formgroup">
+    						<label for="imagen" class="form-label">Imagen</label>
+    						<input type="file" class="form-control" name="img" id="img">
+						  </div>
+					  </div>
+					  <div class="col-md-6">
+						  <div class="formgroup">
+    						<label for="categoria" class="form-label">Categoría</label>
+    						<select name="categoria" class="form-control" id="categoria">
+								<option value=""></option>
+								<option value="Textil">Textil</option>
+								<option value="Promocional">Promocional</option>
+							</select>
+						  </div>
+					  </div>
+  				</div>
+				<div class="row py-3">
+					  <div class="col-md-6">
+						  <div class="formgroup">
+    						<label for="precio" class="form-label">Precio</label>
+    						<input type="number" step="0.01" min="0" max="100000000" class="form-control" name="precio" id="precio">
+						  </div>
+					  </div>
+					  <div class="col-md-6">
+						  <div class="formgroup">
+    						<label for="existencias" class="form-label">Existencias</label>
+    						<input type="number" class="form-control" name="existencias" id="existencias">
+						  </div>
+					  </div>
+  				</div>
+				<div class="container">
+  					<button type="submit" name="add" class="btn btn-primary">Agregar</button>
+					<a href="index.php" class="btn btn-danger">Cancelar</a>
 				</div>
-				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="control-label" for="nombre">Nombre:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" name="nombre" id="nombre">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="control-label" for="descripcion">Descripción:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="text" min="2" max="5" class="form-control" name="descripcion" id="descripcion">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="control-label" for="imagen" >Imagen: </label>
-					</div>
-					<div class="col-sm-10">
-						<input type="file" class="form-control" name="img" id="img">
-					</div>
-				</div>
-            <div class="row form-group">
-					<div class="col-sm-2">
-						<label class="control-label" for="categoria" >Categoría: </label>
-					</div>
-					<div class="col-sm-10">
-						<select class="form-control" name="categoria" id="categoria">
-              <option value=""></option>
-              <option value="Textil">Textil</option>
-              <option value="Promocional">Promocional</option>
-            </select>
-					</div>
-				</div>
-        <div class="row form-group">
-          <div class="col-sm-2">
-            <label class="control-label" for="precio">Precio:</label>
-          </div>
-          <div class="col-sm-10">
-            <input type="number" class="form-control" name="precio" id="precio">
-          </div>
-        </div>
-        <div class="row form-group">
-          <div class="col-sm-2">
-            <label class="control-label" for="existencias">Existencias:</label>
-          </div>
-          <div class="col-sm-10">
-            <input type="number" min="0" class="form-control" name="existencias" id="existencias">
-          </div>
-			</div>
-            <div class="">
-                <button type="submit" name="add" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span>Agregar</a>
-                <button><a href="index.php">Volver al menu principal</a></button>
 			</form>
-            </div>
-            </div>
+		</div>
+	</div>
+</div>
 </body>
 </html>

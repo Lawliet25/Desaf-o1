@@ -8,6 +8,10 @@ function esCodigo($var){
   return $esCodigo;
 }
 
+function mayorCero($var){
+  return preg_match('/^\d+$/',$var);
+}
+
 function esTexto($var){
   return preg_match('/^[a-zA-z]+$/',$var);
 }
@@ -16,7 +20,6 @@ function esImagen($archivo){
   $patron = "/\.(jpe?g|png)$/i";
   $verificado = preg_match($patron, $archivo);
   if ($_FILES["img"]["name"]!=null) {
-    // code...
 
   $esimagen = $verificado == true ? true : false;
 
