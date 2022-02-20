@@ -15,47 +15,29 @@
         <a href="login.php"  class="btn btn-success" style="float:right">Iniciar sesión como Administrador</a>
     </div>
     <div class="container py-3">
-        <div class="">
-        <table class="table table-light table-striped table align-middle table-bordered" style="margin-top:20px;">
-                <thead>
-                    <!--<th>Codigo</th>-->
-                    <th>Nombre de producto</th>
-                    <!--<th>Descripción</th>-->
-                    <th>Imagen de producto</th>
-                    <!--<th>Categoría</th>-->
-                    <th>Precio</th>
-                    <!--<th>Existencias</th>-->
-                    <th>Acciones</th>
-                </thead>
-                <tbody>
+            <div class="container py-3">
+                <div class="row py-3">
                     <?php
                         $productos=simplexml_load_file('productos.xml');
                         foreach($productos->producto as $row){
                     ?>
-                        <tr>
-                            <!--<td><?//=$row->codigo?></td>-->
-                            <td><?=$row->nombre?></td>
-                            <!--<td><?=$row->descripcion?></td>-->
-                            <td><img src="img/<?=$row->img?>" width="300"></td>
-                            <!--<td><?=$row->categoria?></td>-->
-                            <td><?php echo "$"; ?><?=$row->precio?></td>
-                            <!--<td><?=$row->existencias?></td>-->
-                            <td>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detalles_<?=$row->codigo?>">
-                                Ver más
-                            </button>
-                            </td>
-                        </tr>
+                                    <div class="col-4 py-3">
+                                        <strong><p class="text-center"><?=$row->nombre?></p></strong>
+                                        <p class="text-center"><img src="img/<?=$row->img?>" width="300px" height="300px"></p>
+                                        <p class="text-center">$<?=$row->precio?></p>
+                                        <p class="text-center"><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detalles_<?=$row->codigo?>">
+                                            Ver más
+                                        </a></p>
+                                        <hr>
+                                    </div>
                     <?php
-                        include('modaldetalles.php');
-                    ?>
-                   <?php
+                        require('modaldetalles.php');
+                    ?>            
+                    <?php
                         }
                     ?>
-                </tbody>
-            </table>
-
-        </div>
+                </div>
+            </div>
     </div>
 </body>
 </html>
