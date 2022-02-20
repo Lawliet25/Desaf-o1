@@ -71,7 +71,7 @@
   				</div>
 				<div class="container">
   					<button type="submit" name="add" class="btn btn-primary">Agregar</button>
-					<a href="index.php" class="btn btn-danger">Cancelar</a>
+					<a href="vadmin.php" class="btn btn-danger">Cancelar</a>
 				</div>
 			</form>
 		</div>

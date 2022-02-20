@@ -14,19 +14,19 @@
     $producto->addChild('precio',$_POST['precio']);
     $producto->addChild('existencias',$_POST['existencias']);
     file_put_contents('productos.xml',$productos->asXML());
-    header('location:index.php?exito=1');
+    header('location:vadmin.php?exito=1');
     UploadImage();
     }
     else{
-        header('location:index.php?errorcode=1');
+        header('location:vadmin.php?errorcode=1');
     }
 }else{
-    header('location:index.php?errorimagen=1');
+    header('location:vadmin.php?errorimagen=1');
 }
 }else{
-    header('location:index.php?errorcodigo=1');
+    header('location:vadmin.php?errorcodigo=1');
 }
 }else{
-    header('location:index.php?errorexis=1');
+    header('location:vadmin.php?errorexis=1');
 }
 ?>
