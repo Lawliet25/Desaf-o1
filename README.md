@@ -4,7 +4,7 @@ Intregrantes:
 
 Linares López, Oscar Alejandro  LL191567
 
-Valle Díaz, Rodrigo Fernando    VD191672
+    Valle Díaz, Rodrigo Fernando    VD191672
 
 Credenciales modo administración:
 
