@@ -14,7 +14,7 @@
 						<label class="control-label" style="position:relative; top:7px;">Codigo:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="codigo" value="<?php echo $row->codigo; ?>" readonly>
+						<input style="margin-left: 15px" type="text" class="form-control" name="codigo" value="<?php echo $row->codigo; ?>" readonly>
 					</div>
 				</div>
 				<div class="row form-group">
@@ -22,7 +22,7 @@
 						<label class="control-label" style="position:relative; top:7px;">Nombre:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="nombre" value="<?php echo $row->nombre; ?>">
+						<input style="margin-left: 15px" type="text" class="form-control" name="nombre" value="<?php echo $row->nombre; ?>">
 					</div>
 				</div>
 				<div class="row form-group">
@@ -30,7 +30,7 @@
 						<label class="control-label" style="position:relative; top:7px;">Descripción:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="descripcion" value="<?php echo $row->descripcion; ?>">
+						<input style="margin-left: 15px" type="text" class="form-control" name="descripcion" value="<?php echo $row->descripcion; ?>">
 					</div>
 				</div>
 				<div class="row form-group">
@@ -38,7 +38,7 @@
 						<label class="control-label" style="position:relative; top:7px;">Imagen:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="file" class="form-control" name="img" value="img/<?=$row->img?>" >
+						<input style="margin-left: 15px" type="file" class="form-control" name="img" value="img/<?=$row->img?>" >
             <img src="img/<?=$row->img?>" width="300px" alt="">
 					</div>
 				</div>
@@ -47,7 +47,7 @@
 						<label class="control-label" style="position:relative; top:7px;">Categoría:</label>
 					</div>
           <div class="col-sm-10">
-            <select name = "categoria" class="form-control">
+            <select style="margin-left: 15px" name = "categoria" class="form-control">
                 <option value="Textil" <?php if ($row->categoria == "Textil") echo "selected='selected'";?> >Textil</option>
                 <option value="Promocional" <?php if ($row->categoria == "Promocional") echo "selected='selected'";?> >Promocional</option>
                 </select>
@@ -58,7 +58,7 @@
             <label class="control-label" style="position:relative; top:7px;">Precio:</label>
           </div>
           <div class="col-sm-10">
-            <input type="number" class="form-control" name="precio" value="<?=$row->precio?>">
+            <input style="margin-left: 15px" type="number" class="form-control" name="precio" value="<?=$row->precio?>">
           </div>
         </div>
         <div class="row form-group">
@@ -66,7 +66,7 @@
             <label class="control-label" style="position:relative; top:7px;">Existencias:</label>
           </div>
           <div class="col-sm-10">
-            <input type="number" class="form-control" name="existencias" value="<?php echo $row->existencias; ?>">
+            <input style="margin-left: 15px" type="number" class="form-control" name="existencias" value="<?php echo $row->existencias; ?>">
           </div>
         </div>
       </div>
