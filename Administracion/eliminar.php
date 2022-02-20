@@ -14,5 +14,5 @@
     }
     unset($productos->producto[$indice]);
     file_put_contents('productos.xml',$productos->asXML());
-    header('location:index.php?elim=1');
+    header('location:vadmin.php?elim=1');
 ?>

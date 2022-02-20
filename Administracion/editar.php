@@ -28,14 +28,14 @@
 		file_put_contents('productos.xml', $productos->asXML());
 		$_SESSION['message'] = '¡Producto actualizado exitosamente!';
 		UploadImage();
-		header('location:index.php?actua=1');
+		header('location:vadmin.php?actua=1');
 	}else{
-		header('location:index.php?errorimagen=1');
+		header('location:vadmin.php?errorimagen=1');
 	}
 	}
 	else{
 		$_SESSION['message'] = 'Selecciona uno primero';
-		header('location:index.php');
+		header('location:vadmin.php');
 	}
 
 ?>
