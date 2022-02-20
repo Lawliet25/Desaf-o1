@@ -18,7 +18,7 @@
         <div class="">
             <div class="container">
                 <a href="formulario.php" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Agregar producto</a>
-                <a href="login.php"  class="btn btn-danger" style="float:right">Cerrar sesión</a>
+                <a href="https://desafio1lis.000webhostapp.com/"  class="btn btn-danger" style="float:right">Cerrar sesión</a>
             </div>
 
             <table class="table table-light table-striped table align-middle table-bordered" style="margin-top:20px;">
